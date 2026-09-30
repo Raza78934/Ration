@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bihar e-Ration Card | Search & Download</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f8f6;
+  color:#18352a;
+}
+
+header{
+  background:linear-gradient(135deg,#063b29,#087443);
+  color:white;
+  padding:15px 5%;
+}
+
+.nav{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.logo span{
+  background:white;
+  color:#087443;
+  padding:8px;
+  border-radius:9px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-size:14px;
+}
+
+.hero{
+  background:linear-gradient(135deg,#063b29,#0a8750);
+  color:white;
+  padding:70px 20px;
+}
+
+.hero-inner{
+  max-width:1050px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 430px;
+  gap:45px;
+  align-items:center;
+}
+
+.badge{
+  display:inline-block;
+  background:rgba(255,255,255,.15);
+  padding:7px 13px;
+  border-radius:20px;
+  margin-bottom:18px;
+  font-size:13px;
+}
+
+h1{
+  font-size:clamp(38px,6vw,62px);
+  line-height:1.05;
+  margin-bottom:18px;
+}
+
+.hero p{
+  color:#dceee5;
+  font-size:17px;
+}
+
+.search-box{
+  background:white;
+  color:#18352a;
+  padding:28px;
+  border-radius:20px;
+  box-shadow:0 20px 50px rgba(0,0,0,.22);
+}
+
+.search-box h2{
+  margin-bottom:7px;
+}
+
+.note{
+  color:#687871;
+  font-size:13px;
+  margin-bottom:18px;
+}
+
+label{
+  display:block;
+  font-size:14px;
+  font-weight:bold;
+  margin:14px 0 6px;
+}
+
+select,input{
+  width:100%;
+  padding:13px;
+  border:1px solid #d6e2dc;
+  border-radius:9px;
+  font-size:15px;
+  background:white;
+}
+
+button{
+  border:0;
+  cursor:pointer;
+  border-radius:9px;
+  padding:13px 18px;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.search-btn{
+  width:100%;
+  background:#087443;
+  color:white;
+  margin-top:18px;
+}
+
+.search-btn:hover{
+  background:#065b35;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.title h2{
+  font-size:31px;
+}
+
+.title p{
+  color:#687871;
+  margin-top:7px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 8px 30px rgba(0,0,0,.07);
+}
+
+.icon{
+  font-size:28px;
+  margin-bottom:12px;
+}
+
+.card p{
+  color:#687871;
+  margin-top:8px;
+  font-size:14px;
+}
+
+.notice{
+  max-width:900px;
+  margin:auto;
+  background:#fff7df;
+  border-left:5px solid #d99b19;
+  padding:18px;
+  border-radius:9px;
+  font-size:14px;
+}
+
+.official{
+  text-align:center;
+  margin-top:30px;
+}
+
+.official a{
+  display:inline-block;
+  background:#087443;
+  color:white;
+  text-decoration:none;
+  padding:14px 22px;
+  border-radius:9px;
+  font-weight:bold;
+}
+
+footer{
+  background:#062c20;
+  color:#d5e5df;
+  text-align:center;
+  padding:35px 20px;
+}
+
+footer p{
+  margin-top:8px;
+  font-size:12px;
+  color:#9eb5ac;
+}
+
+@media(max-width:800px){
+  .hero-inner{
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .hero{
+    padding:50px 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+
+    <div class="logo">
+      <span>🪪</span>
+      Bihar e-Ration Card
+    </div>
+
+    <nav>
+      <a href="#search">Search</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<section class="hero" id="search">
+
+  <div class="hero-inner">
+
+    <div>
+
+      <span class="badge">
+        Bihar Food & Consumer Protection Services
+      </span>
+
+      <h1>
+        e-Ration Card<br>
+        Search & Download
+      </h1>
+
+      <p>
+        Search your Bihar ration-card record through the
+        official Bihar EPDS portal and use its available
+        print/download facilities.
+      </p>
+
+    </div>
+
+
+    <div class="search-box">
+
+      <h2>Search Ration Card</h2>
+
+      <p class="note">
+        Your information is sent directly to the official
+        Bihar EPDS website. This website does not store it.
+      </p>
+
+
+      <label>Card Area</label>
+
+      <select id="area">
+        <option value="Rural">Rural</option>
+        <option value="Urban">Urban</option>
+      </select>
+
+
+      <label>District</label>
+
+      <select id="district">
+
+        <option value="">Select District</option>
+
+        <option>Araria</option>
+        <option>Arwal</option>
+        <option>Aurangabad</option>
+        <option>Banka</option>
+        <option>Begusarai</option>
+        <option>Bhagalpur</option>
+        <option>Bhojpur</option>
+        <option>Buxar</option>
+        <option>Darbhanga</option>
+        <option>East Champaran</option>
+        <option>Gaya</option>
+        <option>Gopalganj</option>
+        <option>Jamui</option>
+        <option>Jehanabad</option>
+        <option>Kaimur</option>
+        <option>Katihar</option>
+        <option>Khagaria</option>
+        <option>Kishanganj</option>
+        <option>Lakhisarai</option>
+        <option>Madhepura</option>
+        <option>Madhubani</option>
+        <option>Munger</option>
+        <option>Muzaffarpur</option>
+        <option>Nalanda</option>
+        <option>Nawada</option>
+        <option>Patna</option>
+        <option>Purnia</option>
+        <option>Rohtas</option>
+        <option>Saharsa</option>
+        <option>Samastipur</option>
+        <option>Saran</option>
+        <option>Sheikhpura</option>
+        <option>Sheohar</option>
+        <option>Sitamarhi</option>
+        <option>Siwan</option>
+        <option>Supaul</option>
+        <option>Vaishali</option>
+        <option>West Champaran</option>
+
+      </select>
+
+
+      <label>Ration Card Number</label>
+
+      <input
+        id="rcNumber"
+        type="text"
+        placeholder="Enter ration card number"
+        autocomplete="off"
+      >
+
+
+      <button
+        class="search-btn"
+        onclick="openOfficialSearch()"
+      >
+        🔎 Search on Official Portal
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="container" id="services">
+
+  <div class="title">
+
+    <h2>Ration Card Services</h2>
+
+    <p>
+      Access the official Bihar ration-card service
+    </p>
+
+  </div>
+
+
+  <div class="cards">
+
+    <div class="card">
+
+      <div class="icon">🔎</div>
+
+      <h3>Search Ration Card</h3>
+
+      <p>
+        Search an existing Bihar ration-card record
+        through the official EPDS service.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="icon">🖨️</div>
+
+      <h3>Print</h3>
+
+      <p>
+        After your record is displayed on the official
+        portal, use its print option.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="icon">📥</div>
+
+      <h3>Save as PDF</h3>
+
+      <p>
+        Use your browser's Print → Save as PDF option
+        when the official record is displayed.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="container" id="about">
+
+  <div class="notice">
+
+    <strong>Important:</strong>
+
+    This website is an independent interface and is
+    <strong>not the official Government of Bihar website</strong>.
+
+    It does not access, store, modify, or create government
+    ration-card records.
+
+    Your actual ration-card information is handled by the
+    official Bihar EPDS service.
+
+  </div>
+
+
+  <div class="official">
+
+    <p style="margin-bottom:15px">
+      For the actual government service:
+    </p>
+
+    <a
+      href="https://epds.bihar.gov.in/SearchByRCID.aspx"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Open Official Bihar EPDS
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <strong>Bihar e-Ration Card</strong>
+
+  <p>
+    Independent informational interface
+  </p>
+
+  <p>
+    For official ration-card services, use the
+    Government of Bihar EPDS portal.
+  </p>
+
+</footer>
+
+
+<script>
+
+function openOfficialSearch(){
+
+  const area =
+    document.getElementById("area").value;
+
+  const district =
+    document.getElementById("district").value;
+
+  const rcNumber =
+    document.getElementById("rcNumber").value.trim();
+
+
+  if(!district){
+
+    alert("Please select your district.");
+
+    return;
+  }
+
+
+  if(!rcNumber){
+
+    alert("Please enter your ration card number.");
+
+    return;
+  }
+
+
+  /*
+    The official Bihar EPDS search page currently
+    handles the actual search.
+
+    We intentionally do NOT send the user's
+    ration-card number to our own server.
+  */
+
+  const officialURL =
+    "https://epds.bihar.gov.in/SearchByRCID.aspx";
+
+
+  window.open(
+    officialURL,
+    "_blank",
+    "noopener,noreferrer"
+  );
+
+}
+
+</script>
+
+</body>
+</html>
